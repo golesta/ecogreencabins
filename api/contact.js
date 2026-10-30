@@ -26,8 +26,8 @@ module.exports = async (req, res) => {
 
   try {
     await resend.emails.send({
-      from: "EcoGreenCabins <enquiries@ecogreencabins.com>",
-      to: "sal@salaro.com",
+      from: "EcoGreenCabins <contact@salaro.com>",
+      to: "hello@ecogreencabins.com",
       reply_to: email,
       subject: `New enquiry from ${name}`,
       text: `Name: ${name}\nPhone: ${phone}\nEmail: ${email}\n\nProject:\n${project}`,
