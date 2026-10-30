@@ -30,7 +30,7 @@ module.exports = async (req, res) => {
       to: "hello@ecogreencabins.com",
       reply_to: email,
       subject: `New enquiry from ${name}`,
-      text: `Name: ${name}\nPhone: ${phone}\nEmail: ${email}\n\nProject:\n${project}`,
+      text: `Name: ${name}\nPhone: ${phone}\nEmail: ${email}\n\nMessage:\n${project}`,
     });
     res.status(200).json({ ok: true });
   } catch (err) {
